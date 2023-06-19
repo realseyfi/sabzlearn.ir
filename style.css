@@ -581,7 +581,7 @@ ul {
     .main_continer .box_container {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 179px);
+        grid-template-columns: repeat(2, 175px);
         grid-template-rows: repeat(16, 279px);
         grid-column-gap: 30px;
         grid-row-gap: 30px;
