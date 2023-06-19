@@ -1,0 +1,740 @@
+/* Start Importing Font */
+
+@font-face {
+    font-family: "Danalight";
+    src: url("fonts/Dana-Light.woff");
+}
+
+@font-face {
+    font-family: "Danabold";
+    src: url("fonts/Dana-Bold.woff");
+}
+
+@font-face {
+    font-family: "Danablack";
+    src: url("fonts/Dana-Black.woff");
+}
+
+@font-face {
+    font-family: "Danamedium";
+    src: url("fonts/Dana-Medium.woff");
+}
+
+@font-face {
+    font-family: "Danaregular";
+    src: url("fonts/Dana-Regular.woff");
+}
+
+@font-face {
+    font-family: "Danafanumlight";
+    src: url("fonts/DanaFaNum-Light.woff");
+}
+
+@font-face {
+    font-family: "Danafanumbold";
+    src: url("fonts/DanaFaNum-Bold.woff");
+}
+
+@font-face {
+    font-family: "Danafanumblack";
+    src: url("fonts/DanaFaNum-Black.woff");
+}
+
+@font-face {
+    font-family: "Danafanummedium";
+    src: url("fonts/DanaFaNum-Medium.woff");
+}
+
+/* End Importing Font */
+
+
+body {
+    background-color: #242532;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+/* Start styling Header */
+
+.top_header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    font-family: "Danaregular";
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.14) !important;
+    justify-content: space-between;
+}
+
+.top_header .top_header__right {
+    margin-right: 95px;
+}
+
+.top_header .top_header__right ul {
+    display: flex;
+}
+
+.top_header .gmail {
+    margin-left: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.top_header .fa {
+    margin-right: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top_header .top_header__left {
+    margin-left: 115px;
+}
+
+.top_header .top_header__right ul li a {
+    color: #abb8c3;
+    font-size: 14px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 48, 65, 0.843);
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("img/background-header-scaled.jpg");
+    background-position: 15% 27%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+
+.header .top_navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 49px;
+    border-bottom: 1px solid rgb(255 255 255 / 32%) !important;
+    margin-top: 30px;
+    padding: 10px 100px 10px 100px;
+}
+
+.header .top_navbar .top_navbar__right {
+    display: flex;
+    align-items: center;
+}
+
+
+.header .top_navbar .top_navbar__right .banner {
+    width: 80px;
+    height: 45px;
+    margin-left: 30px;
+}
+
+.header .top_navbar .top_navbar__right .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .top_navbar .top_navbar__left {
+    display: flex;
+    align-items: center;
+}
+
+.header .top_navbar .top_navbar__right ul {
+    font-family: "Danaregular";
+    display: flex;
+    gap: 20px;
+}
+
+.ux-shape-fill {
+    fill: rgb(36, 37, 50);
+}
+
+.header .top_navbar .top_navbar__right ul li a {
+    color: hsla(0, 0%, 100%, .8);
+    font-size: 15px;
+}
+
+.top_navbar__left .searchBox {
+    width: 190px;
+    height: 90%;
+    background-color: hsla(0, 0%, 100%, .2) !important;
+    border-color: hsla(0, 0%, 100%, .09);
+    border-radius: 25px;
+    padding: 8px 10px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.top_navbar__left .searchBox input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-family: "Danalight";
+    color: #fff;
+    font-size: 15px;
+    width: 90%;
+}
+
+.top_navbar__left .searchBox span {
+    width: 10%;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top_navbar__left .searchBox input::placeholder {
+    font-family: "Danalight";
+    color: #fff;
+    font-size: 15px;
+}
+
+.shape svg {
+    display: block;
+    height: 150px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100%;
+    bottom: 0;
+}
+
+.login__signup {
+    padding: 8px 12px;
+    font-family: "Danalight";
+    color: #fff;
+    background-color: #2196f3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.cart i {
+    font-size: 30px;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.main_header__container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 150px;
+    width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_header__container .main_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 66.6666666667%;
+}
+
+.main_header .searchBox {
+    width: 90%;
+    background-color: hsla(0, 0%, 100%, .2) !important;
+    border-color: hsla(0, 0%, 100%, .09);
+    border-radius: 30px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.main_header .searchBox input {
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Danaregular";
+}
+
+.main_header .searchBox input::placeholder {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Danaregular";
+}
+
+.main_header .content h3 {
+    margin-bottom: 30px;
+    font-size: 23px;
+    font-family: 'Danalight';
+    color: #fff;
+    font-weight: 100;
+}
+
+
+.main_header .searchBox span {
+    width: 10%;
+    font-size: 30px;
+    margin-right: 100px;
+    color: #fff;
+}
+
+
+/* End styling Header */
+
+/* Start main stayling */
+
+.main_continer {
+    width: 100%;
+    background-color: #242532;
+    height: auto;
+}
+
+.margin {
+    width: 100%;
+    height: 40px;
+    background-color: #242532;
+}
+
+.main_continer .box_container {
+    width: 1080px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(8, 310px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.main_continer .box_container .box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #2f3041;
+    border-radius: 7px;
+}
+
+.box .name {
+    padding: 2px 5px;
+    background: #2196f3;
+    color: #fff;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 11px;
+    font-family: "Danalight";
+}
+
+.box .content a {
+    color: #fff;
+    font-family: "Danalight";
+    font-size: 17px;
+}
+
+.content .title {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 48px;
+}
+
+.box img {
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.main_continer .box_container .box .information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.information .information_left span {
+    color: #cdb187;
+    font-family: "Danafanumlight";
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.information .information_right b {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Danafanumlight";
+}
+
+.information .information_right {
+    color: #fff;
+    font-size: 13px;
+    font-family: "Danalight";
+}
+
+.content .student {
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.content .student span {
+    color: #fff;
+    font-family: "Danalight";
+    font-size: 14px;
+}
+
+.box_container .box .content {
+    width: 100%;
+}
+
+.box_container .box .content .information {
+    width: 100%;
+}
+
+/* End main stayling */
+
+/* Start Slider Styling */
+
+.tittle {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.tittle .magalat {
+    color: rgb(36, 169, 96);
+    font-family: 'Danaregular';
+    font-weight: 400;
+    width: 203px;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+}
+
+
+.tittle .line {
+    height: 2px;
+    background-color: #555;
+    width: 573.65px;
+}
+
+.slider_container {
+    width: 1080px;
+    height: auto;
+    background-color: #242532;
+    margin: 0 auto;
+}
+
+.slider_container .slider {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 247px);
+    grid-template-rows: repeat(1, 247px);
+    grid-column-gap: 30px;
+    overflow-x: scroll;
+}
+
+
+.slider::-webkit-scrollbar {
+    height: 6px;
+    margin-bottom: 20px;
+}
+
+
+.slider::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+.slider_container .slider .slider_items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.slider_container .slider .slider_items .img_box {
+    width: 100%;
+}
+
+.slider_container .slider .slider_items .img_box img {
+    width: 100%;
+    border-radius: 15px;
+    height: 140px;
+}
+
+.slider_container .slider .slider_items h5 {
+    color: #f1f1f1;
+    font-size: 14px;
+    font-family: 'Danalight';
+    font-weight: 100;
+}
+
+.slider_container .slider .slider_items p {
+    color: #555;
+    font-size: 12px;
+    font-family: 'Danalight';
+}
+
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #2f3041;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .shapes {
+    height: 30px;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.footer .shapes svg {
+    width: 100%;
+    height: 100%;
+}
+
+.footer footer .green_title p {
+    color: rgb(160, 204, 0);
+    font-size: 17px;
+    font-family: "Danaregular";
+    margin-right: 70px;
+    margin-bottom: 10px;
+}
+
+.footer footer {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.footer footer .detalis {
+    width: 1080px;
+}
+
+.footer footer .detalis p {
+    font-size: 17px;
+    font-family: "Danaregular";
+    color: #fff;
+    text-align: justify;
+}
+
+/* End Slider Styling */
+
+.menus {
+    display: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+}
+.users {
+    color: #fff;
+    padding: 8px 10px;
+    background-color: #2ed573;
+    border-radius: 5px;
+    display: none;
+}
+/* Start Responsive website */
+
+@media (max-width: 650px) {
+    .main_continer .box_container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 179px);
+        grid-template-rows: repeat(16, 279px);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .top_header {
+        display: none;
+    }
+
+
+    .header .top_navbar {
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .menus {
+        color: #d1cccc;
+        margin-right: -70px;
+    }
+
+    .cart i {
+        font-size: 30px;
+        color: #d1cccc;
+        margin-right: 10px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .header .top_navbar .top_navbar__right .banner {
+        width: 80px;
+        height: 45px;
+        margin-left: 0;
+    }
+
+    .top_navbar__left .searchBox {
+        display: none;
+    }
+
+    .login__signup {
+        display: none;
+    }
+
+    .shape svg {
+        display: block;
+        height: 60px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        bottom: 0;
+    }
+
+    .main_header__container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 110px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header {
+        width: 100%;
+        height: 300px;
+    }
+
+    .main_header__container .main_header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main_header .content {
+        width: 90%;
+    }
+
+    .main_header .content h3 {
+        margin-bottom: 30px;
+        font-size: 13px;
+        font-family: 'Danalight';
+        color: #fff;
+        font-weight: 100;
+    }
+
+    .box .name {
+        padding: 2px 5px;
+        background: #2196f3;
+        color: #fff;
+        border-radius: 25px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 10px;
+        font-family: "Danalight";
+    }
+
+
+    .header .top_navbar .top_navbar__right ul {
+        display: none;
+    }
+
+    .content .title {
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        height: 60px;
+    }
+
+    .content .title a {
+        font-size: 16px;
+    }
+
+    .slider_container {
+        width: 100%;
+        height: auto;
+        background-color: #242532;
+        margin: 0 auto;
+    }
+
+    .slider_container .slider {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 247px);
+        grid-template-rows: repeat(1, 247px);
+        grid-column-gap: 30px;
+        overflow-x: scroll;
+        padding-right: 0;
+        padding-left: 20px;
+    }
+
+    .tittle .line {
+        height: 2px;
+        background-color: #555;
+        width: 120px;
+    }
+
+    .tittle .magalat {
+        color: rgb(36, 169, 96);
+        font-family: 'Danaregular';
+        font-weight: 400;
+        width: 150px;
+        font-size: 18px;
+        margin: 0 10px 0 10px;
+    }
+
+    .footer footer .detalis {
+        width: 100%;
+    }
+}
+
+/* End Responsive website */
